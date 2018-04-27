@@ -128,6 +128,7 @@ class DoctrinePHPCRExtension extends AbstractDoctrineExtension
                 case 'prismic':
                 case 'doctrinedbal':
                 case 'jackrabbit':
+                case 'none':
                     if (empty($loaded['jackalope'])) {
                         $this->loader->load('jackalope.xml');
                         $loaded['jackalope'] = true;

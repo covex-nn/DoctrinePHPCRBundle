@@ -88,7 +88,6 @@ class Configuration implements ConfigurationInterface
 
         $node
             ->requiresAtLeastOneElement()
-            ->defaultValue(['none' => []])
             ->fixXmlConfig('option')
             ->useAttributeAsKey('name')
             ->prototype('array')
@@ -146,7 +145,7 @@ class Configuration implements ConfigurationInterface
                         ->fixXmlConfig('parameter')
                         ->children()
                             ->enumNode('type')
-                                ->values(['jackrabbit', 'doctrinedbal', 'prismic'])
+                                ->values(['jackrabbit', 'doctrinedbal', 'prismic', 'none'])
                                 ->defaultValue('jackrabbit')
                             ->end()
                             // all jackalope
