@@ -88,6 +88,7 @@ class Configuration implements ConfigurationInterface
 
         $node
             ->requiresAtLeastOneElement()
+            ->defaultValue(['none' => []])
             ->fixXmlConfig('option')
             ->useAttributeAsKey('name')
             ->prototype('array')
@@ -134,6 +135,8 @@ class Configuration implements ConfigurationInterface
 
                                         break;
                                     case 'doctrinedbal':
+                                        break;
+                                    case 'none':
                                         break;
                                 }
 
