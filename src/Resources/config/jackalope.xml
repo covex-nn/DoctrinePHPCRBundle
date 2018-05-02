@@ -38,6 +38,10 @@
             <argument type="collection"/>
         </service>
 
+        <service id="doctrine_phpcr.jackalope.repository.factory.none" class="Jackalope\Repository">
+            <argument type="collection"/>
+        </service>
+
         <service id="doctrine_phpcr.jackalope.session"
                  class="Jackalope\Session"
                  abstract="true"
