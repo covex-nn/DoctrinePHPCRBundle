@@ -38,7 +38,9 @@
             <argument type="collection"/>
         </service>
 
-        <service id="doctrine_phpcr.jackalope.repository.factory.none" class="Jackalope\Repository">
+        <service id="doctrine_phpcr.jackalope.repository.factory.none"
+                 class="Doctrine\Bundle\PHPCRBundle\Repository\NoneRepository"
+                >
             <argument type="collection"/>
         </service>
 
